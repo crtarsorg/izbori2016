@@ -144,6 +144,10 @@ footer {
 .copyright a {
 	color: #fff;
 }
+.copyright a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
 .newsletter {
 	float: right;
 }
@@ -158,10 +162,12 @@ footer {
 }
 .newsletter button {
 	background: #fff;
-	border-left: 1px solid #0b445f;
+	border-left: 1px solid #ccc;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .newsletter button:hover {
-	background: #09223e;
+	background: #0b445f;
 	color: #fff;
 	border-bottom: 3px solid #08112d;
 }
