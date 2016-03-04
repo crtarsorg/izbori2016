@@ -154,10 +154,16 @@ footer {
 	float: left;
 	padding: 4px 5px;
 	border: transparent;
+	border-bottom: 3px solid #ccc;
 }
 .newsletter button {
 	background: #fff;
-	border-left: 1px solid #09223e;
+	border-left: 1px solid #0b445f;
+}
+.newsletter button:hover {
+	background: #09223e;
+	color: #fff;
+	border-bottom: 3px solid #08112d;
 }
 /*BOOTSTRAP EDITS*/
 .container-fluid {
@@ -170,4 +176,17 @@ footer {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background: #eee;
+}
+
+input::-webkit-input-placeholder {
+   color: #111;
+}
+input:-moz-placeholder {
+   color: #111;  
+}
+input::-moz-placeholder {
+   color: #111;  
+}
+input:-ms-input-placeholder {  
+   color: #111;  
 }
