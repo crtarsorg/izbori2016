@@ -50,6 +50,15 @@ header {
 	max-height: 350px;
 	overflow: hidden;
 }
+.carousel-indicators {
+	bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+	.carousel-wrap {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
 
 /*NAVIGATION*/
 .main-navigation {
@@ -89,6 +98,10 @@ header {
 	}
 	.navbar-collapse {
 		box-shadow: 0 0 0px;
+	}
+	.main-navigation {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
@@ -183,7 +196,13 @@ footer {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background: #eee;
 }
-
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #09223e;
+}
+.navbar-toggle {
+	border-radius: 0px;
+	padding: 7px 5px;
+}
 input::-webkit-input-placeholder {
    color: #111;
 }
