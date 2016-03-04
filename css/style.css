@@ -1,0 +1,36 @@
+@font-face {
+    font-family: DroidSans;
+    src: url(../fonts/DroidSans.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "DroidSans", sans-serif;
+}
+body, h1, h2 {
+	font-size: 13px;
+}
+h1 {
+	margin: 0;
+}
+header {
+	margin-top: 20px;
+}
+.logo {
+	margin-bottom: 20px;
+}
+.navbar {
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+/*CAROUSEL*/
+
+.carousel {
+	max-height: 350px;
+}
+.carousel .item {
+	max-height: 350px;
+	overflow: hidden;
+}
