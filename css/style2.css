@@ -184,6 +184,22 @@ footer {
 	color: #fff;
 	border-bottom: 3px solid #08112d;
 }
+@media screen and (max-width: 768px) {
+	.copyright, .newsletter {
+		float: none;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.newsletter {
+		margin: 0 auto;
+	    position: relative;
+	    overflow: hidden;
+	    display: table;
+	    text-align: center;
+	}
+}
+
 /*BOOTSTRAP EDITS*/
 .container-fluid {
 	padding-left: 0px;
