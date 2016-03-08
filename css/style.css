@@ -2,6 +2,15 @@
     font-family: DroidSans;
     src: url(../fonts/DroidSans.ttf);
 }
+@font-face {
+    font-family: DinPro;
+    src: url(../fonts/DINPro-Cond.otf);
+}
+@font-face {
+    font-family: DinPro;
+    src: url(../fonts/DINPro-CondMedium.otf);
+    font-weight: 500;
+}
 
 body {
 	margin: 0;
@@ -17,6 +26,14 @@ h1 {
 header {
 	margin-top: 20px;
 }
+
+.main-background {
+	background: #09223e;
+}
+.main-top {
+	padding-bottom: 20px;
+}
+
 .logo {
 	margin-bottom: 20px;
 }
@@ -26,11 +43,208 @@ header {
 }
 
 /*CAROUSEL*/
-
 .carousel {
 	max-height: 350px;
 }
 .carousel .item {
 	max-height: 350px;
 	overflow: hidden;
+}
+.carousel-indicators {
+	bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+	.carousel-wrap {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+/*NAVIGATION*/
+.main-navigation {
+	margin-top: -20px;
+}
+.navbar {
+	min-height: auto;
+}
+.navbar-default {
+	background: #fff;
+}
+.navbar-collapse {
+	padding-left: 0px;
+	padding-right: 0px;
+	box-shadow: 1px 1px 1px #ccc;
+}
+.navbar-nav {
+	margin: 0;
+}
+.navbar-nav li {
+	box-shadow: 1px 1px 1px #ccc;
+}
+.navbar-collapse ul:last-child li {
+	box-shadow: 1px 0px 1px #ccc;
+}
+.nav > li > a {
+	padding: 8px 15px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	background: #eee;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav li {
+		box-shadow: 0 0 0px;
+		border-bottom: 1px solid #ddd;
+	}
+	.navbar-collapse {
+		box-shadow: 0 0 0px;
+	}
+	.main-navigation {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+/*MAIN CONTENT*/
+.main-content {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.main-content .col-xs-6 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main-content h1 {
+	text-transform: uppercase;
+	color: #444;
+    font-size: 20px;
+    font-family: 'DinPro';
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.wrap-content {
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 15px;
+	height: 300px;
+	border-right: 0px;
+}
+.main-content .col-xs-6:last-child .wrap-content {
+	border-right: 1px solid #ddd;
+}
+@media screen and (max-width: 992px) {
+	.main-content .col-xs-6:nth-child(2) .wrap-content {
+		border-right: 1px solid #ddd;
+	}
+}
+@media screen and (max-width: 500px) {
+	.main-content .col-xs-6 {
+		width: 100%;
+	}
+	.wrap-content {
+		border-right: 1px solid #ddd;
+	}
+}
+
+/*KOALICIJE / STRANKE*/
+.stranka-wrap {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.stranka-wrap table {
+	margin-bottom: 20px;
+}
+.stranka-wrap td:first-child {
+	padding-right: 20px;
+}
+.stranka-wrap td:last-child {
+	font-weight: 700;
+}
+
+/*FOOTER*/
+footer {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.copyright {
+	float: left;
+}
+.copyright a {
+	color: #fff;
+}
+.copyright a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+.newsletter {
+	float: right;
+}
+.newsletter p {
+	color: #fff;
+}
+.newsletter input, .newsletter button {
+	float: left;
+	padding: 4px 5px;
+	border: transparent;
+	border-bottom: 3px solid #ccc;
+}
+.newsletter button {
+	background: #fff;
+	border-left: 1px solid #ccc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.newsletter button:hover {
+	background: #0b445f;
+	color: #fff;
+	border-bottom: 3px solid #08112d;
+}
+@media screen and (max-width: 768px) {
+	.copyright, .newsletter {
+		float: none;
+	}
+	.copyright {
+		text-align: center;
+	}
+	.newsletter {
+		margin: 0 auto;
+	    position: relative;
+	    overflow: hidden;
+	    display: table;
+	    text-align: center;
+	}
+}
+
+/*BOOTSTRAP EDITS*/
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: #eee;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #09223e;
+}
+.navbar-toggle {
+	border-radius: 0px;
+	padding: 7px 5px;
+}
+input::-webkit-input-placeholder {
+   color: #111;
+}
+input:-moz-placeholder {
+   color: #111;  
+}
+input::-moz-placeholder {
+   color: #111;  
+}
+input:-ms-input-placeholder {  
+   color: #111;  
 }
