@@ -191,6 +191,12 @@ label {
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 10px;
 }
+.stranka-wrap h2 {
+	font-weight: bold;
+}
+.stranka-wrap p {
+	color: #333 !important;
+}
 .stranka-wrap table {
 	margin-bottom: 20px;
 }
@@ -199,6 +205,10 @@ label {
 }
 .stranka-wrap td:last-child {
 	font-weight: 700;
+}
+.stranka-logo {
+	margin: 0 auto;
+	display: block;
 }
 
 /*FOOTER*/
