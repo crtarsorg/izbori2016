@@ -20,7 +20,7 @@ body {
 body, h1, h2 {
 	font-size: 13px;
 }
-h1 {
+h1, h2 {
 	margin: 0;
 }
 header {
@@ -113,10 +113,6 @@ label {
 	margin-top: 20px;
 	padding-bottom: 40px;
 }
-.main-content .col-xs-6 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
 .main-content h1 {
 	text-transform: uppercase;
 	color: #444;
@@ -132,16 +128,20 @@ label {
 	height: 300px;
 	border-right: 0px;
 }
-.main-content .col-xs-6:last-child .wrap-content {
+.main-page .col-xs-6 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main-page .col-xs-6:last-child .wrap-content {
 	border-right: 1px solid #ddd;
 }
 @media screen and (max-width: 992px) {
-	.main-content .col-xs-6:nth-child(2) .wrap-content {
+	.main-page .col-xs-6:nth-child(2) .wrap-content {
 		border-right: 1px solid #ddd;
 	}
 }
 @media screen and (max-width: 500px) {
-	.main-content .col-xs-6 {
+	.main-page .col-xs-6, .main-content .stranka-akteri .col-xs-6 {
 		width: 100%;
 	}
 	.wrap-content {
@@ -212,6 +212,22 @@ label {
 .stranka-logo {
 	margin: 0 auto;
 	display: block;
+}
+.stranka-akteri {
+	margin-top: 20px;
+}
+.stranka-akteri .pic-wrapper {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.stranka-akteri h2 {
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+@media screen and (max-width: 500px) {
+	.stranka-akteri h2 {
+		margin-top: 20px;
+	}
 }
 
 /*FOOTER*/
