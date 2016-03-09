@@ -1,19 +1,12 @@
-$(function () {
-    $('.summary > div > h2 > b').html(
-        Math.ceil((new Date() - new Date(2014,4,27))/(1000*60*60*24))
-        );
-})
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-        if (document.documentElement.scrollTop || document.body.scrollTop) {
-            $("header").addClass("solid")
-        } else {
-            $("header").removeClass("solid")
-        }
+function stickyFooter() {
+    if ($("body").outerHeight() < $(window).height()) {
+        console.log("test");
+        $("footer").addClass("sticky-footer");
     });
-});
+}
 
-if (window.location.pathname == "/") {
-    $.getScript("js/index.js");
+ console.log("test");
+
+$(document).ready(function()
+    stickyFooter();
 }
