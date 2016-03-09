@@ -193,6 +193,7 @@ label {
 }
 .stranka-wrap h2 {
 	font-weight: bold;
+	margin-bottom: 10px;
 }
 .stranka-wrap p {
 	color: #333 !important;
