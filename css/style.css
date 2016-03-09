@@ -237,6 +237,10 @@ label {
 	.stranka-akteri h2 {
 		margin-top: 20px;
 	}
+	.stranka-akter-info.col-xs-6 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 /*FOOTER*/
