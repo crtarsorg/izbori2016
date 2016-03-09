@@ -1,12 +1,15 @@
 function stickyFooter() {
     if ($("body").outerHeight() < $(window).height()) {
-        console.log("test");
         $("footer").addClass("sticky-footer");
-    });
+    } else {
+        $("footer").removeClass("sticky-footer");
+    }
 }
 
- console.log("test");
-
-$(document).ready(function()
+$(document).ready(function() {
     stickyFooter();
-}
+});
+
+$(window).resize(function() {
+    stickyFooter();
+});
