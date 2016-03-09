@@ -224,6 +224,14 @@ label {
 	margin-bottom: 10px;
 	font-size: 15px;
 }
+.stranka-prethodni-rezultati h2 {
+	text-transform: uppercase;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-family: "DinPro";
+	font-size: 20px;
+}
 @media screen and (max-width: 500px) {
 	.stranka-akteri h2 {
 		margin-top: 20px;
