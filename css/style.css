@@ -200,6 +200,9 @@ label {
 .stranka-wrap table {
 	margin-bottom: 20px;
 }
+.stranka-wrap table tr {
+	vertical-align: text-top;
+}
 .stranka-wrap td:first-child {
 	padding-right: 20px;
 }
