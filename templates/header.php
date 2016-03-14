@@ -1,8 +1,17 @@
+<?php 
+
+
+// pripremiti skripte i stilove ako treba posebno da se ucitaju
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Izbori 2016 - O nama</title>
+        <title>Izbori 2016</title>
 
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -14,22 +23,29 @@
         
         <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"></link> -->
 
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/js/script.js"></script>
     </head>
     <body>
         <section class="container-fluid main-top main-background">
             <header class="container">
                 <h1 class="logo">
-                    <a href="index.html">
-                        <img class="img-responsive" src="images/logo_white.svg" alt="izbori-2016_logo">
+                    <a href="./">
+                        <img class="img-responsive" src="static/images/logo_white.svg" alt="izbori-2016_logo">
                     </a>
                 </h1>
             </header>
+           
+			<?php include_once 'carousel.php'; ?>
+
+            
         </section>
+
+
         <section class="container main-navigation">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -60,7 +76,7 @@
                         </ul>
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="koalicije-stranke.html">Koalicije / Stranke</a>
+                                <a href="pages/koalicije-stranke.html">Koalicije / Stranke</a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav">
@@ -75,32 +91,10 @@
                         </ul>
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="o-nama.html">O nama</a>
+                                <a href="pages/o-nama.html">O nama</a>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </section>
-        <section class="container main-content">
-            <h1>O nama</h1>
-            <p>Sajt Istinomer <i><a href="http://www.istinomer.rs">(www.istinomer.rs)</a></i> pokrenuo je stranice posvećene parlamentarnim izborima 2016. godine. Na njima će svakodnevno biti ažuriran sadržaj posvećen aktivnostima stranaka i koalicija, beležićemo obećanja koja političari daju u kampanji pokušaćemo da osvetlimo najvažnije teme pokrenute u predizbornom periodu. Naravno, i vi poštovani posetioci imate priliku da komentarisanjem sadržaja na sajtu, predlaganjem tema i postavljanjem pitanja strankama i koalicijama, doprinesete uspehu našeg projekta.</p>
-            <p>Više o sajtu <a href="http://www.istinomer.rs">Istinomer.rs</a> možete pročitati <a href="http://www.istinomer.rs/o-istinomeru">ovde</a>.
-        </section>
-
-        <footer class="container-fluid main-background">
-            <div class="container">
-                <div class="copyright">
-                    <a href="http://istinomer.rs" target="_blank">© 2016 Istinomer.rs</a>
-                </div>
-                <div class="newsletter">
-                    <p>Prijavite se za newsletter!</p>
-                    <input type="text" class="" name="email" value="" placeholder="e-mail">
-                    <button class="">Pošalji</button>
-                </div>
-            </div>
-        </footer>
-
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-    </body>
-</html>
