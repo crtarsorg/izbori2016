@@ -10,6 +10,11 @@ switch ($page) {
 		break;
 	
 	case 'o-nama':
+			print_r("<pre>");
+			var_dump(get_defined_vars());
+			print_r("</pre>");
+			die();
+	
 		include_once 'pages/o-nama.php';
 		break;
 	
